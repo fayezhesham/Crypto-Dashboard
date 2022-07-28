@@ -1,0 +1,362 @@
+body{
+    background-color: #0F212D;
+    color: #E6E9EE;
+    font-family: sans-serif;
+    margin:0px;
+    overflow-x:hidden;
+    background-image: radial-gradient(rgba(150, 150, 150, 0.5) 0.022%, transparent 20%);
+    background-position: 0 0, 110px, 110px;
+    background-size: 10px 10px;
+}
+
+
+p{
+    margin:0px;
+}
+
+.top-row{
+    display:flex;
+    padding-left:55px;
+    padding-right:55px;
+}
+
+.title-div{
+    width:35%;
+    float:left;
+    display: flex;
+    align-items: center;
+    justify-content:left;
+}
+
+#title{
+    font-size:30px;
+    margin-top:0px;
+    margin-bottom:0px;
+}
+
+#datetext{
+    margin-top:0px;
+    margin-bottom:0px;
+    margin-right:20px;
+}
+
+.date-picker{
+    float:right;
+    width:65%;
+    display: flex;
+    align-items: center;
+    justify-content:right;
+}
+
+
+
+
+.DateRangePickerInput__withBorder {
+    border-radius: 0px;
+    border: 1px solid #008489;
+}
+
+
+.DateRangePickerInput {
+    background-color: #0D161F;
+    color: #E6E9EE;
+    display: inline-block;
+}
+
+.DateInput {
+    margin: 0;
+    padding: 0;
+    background: #0D161F;
+    position: relative;
+    display: inline-block;
+    width: 130px;
+    vertical-align: middle;
+}
+
+
+.DateRangePickerInput_arrow {
+    display: inline-block;
+    vertical-align: middle;
+    color: #E6E9EE;
+}
+
+
+.DateRangePickerInput, .DateRangePickerInput_1, .DateRangePickerInput__withBorder, .DateRangePickerInput__withBorder_2{
+    background-color: #0D161F;
+}
+
+.DateInput_input {
+    font-weight: 200;
+    font-size: 19px;
+    line-height: 24px;
+    color: #E6E9EE;
+    background-color: #0D161F;
+    width: 100%;
+    padding: 11px 11px 9px;
+    border: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 2px solid transparent;
+    border-left: 0;
+    border-radius: 0;
+}
+
+.DateInput_fangStroke {
+    stroke: #0D161F;
+    fill: #444444;
+}
+
+
+.CalendarMonth {
+    background: #0D161F;
+    text-align: center;
+    vertical-align: top;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+.CalendarDay__default {
+    border: 1px solid #008489;
+    color: #898989;
+    background: #0D161F;
+}
+
+
+.CalendarMonth_caption{
+    color:#008489;
+}
+
+
+.CalendarMonthGrid {
+    background: #0D161F;
+    text-align: left;
+    z-index: 0;
+}
+
+.DayPickerNavigation_button__default {
+    border: 1px solid #101010;
+    background-color: #0D161F;
+    color: #757575;
+}
+
+.DayPicker {
+    background: #0D161F;
+    position: relative;
+    text-align: left;
+}
+
+.DayPickerKeyboardShortcuts_panel {
+    overflow: auto;
+    background: #0D161F;
+    border: 1px solid #dbdbdb;
+    border-radius: 2px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    padding: 22px;
+    margin: 33px;
+    text-align: left;
+}
+
+
+#main-maintext{
+    font-size:25px;
+    font-weight:bold;
+}
+
+#text1-text{
+    font-size:20px;
+    font-weight:bold;
+}
+
+#text2-text{
+    font-size:20px;
+    font-weight:bold;
+}
+
+#text3-text{
+    font-size:20px;
+    font-weight:bold;
+}
+
+#tabletitle{
+    font-weight:bold;
+    font-size:25px;
+}
+
+.text_area{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    height:30%;
+}
+
+
+.dropdown-container{
+    width:22%;
+    float:left;
+    margin-right:10px;
+}
+
+
+
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(46, 1fr);
+    grid-gap: 0px;
+    width:100%;
+
+}
+
+.content{
+/*     margin-left:10px;
+    margin-right:10px; */
+/*     padding-left:10px;
+    padding-right:10px; */
+    padding-bottom:15px;
+}
+
+.main .top-row{
+    grid-area: 1/1/5/21;
+    background-color:#0D161F;
+    border-bottom: 1px black solid;
+}
+
+
+.main .content{
+    grid-area:5/1/47/21;
+    display: grid;
+    grid-template-columns: repeat(60, 1fr);
+    grid-template-rows: repeat(39, 1fr);
+    grid-gap: 0px;
+    width:100%;
+    height:100vh;
+
+}
+.content .main-chart{
+    grid-area:2/3/23/35;
+    background-color:rgba(12,25,34, 0.5);
+    border:6px solid rgba(12,25,34, 0.3);
+    border-radius:20px;
+    box-shadow: -2px -2px 6px #555555, 2px 2px 6px #555555;
+}
+
+
+.content .table-box{
+    grid-area:25/3/40/35;
+    background-color:rgba(12,25,34, 0.5);
+    border:6px solid rgba(12,25,34, 0.3);
+    border-radius:20px;
+    box-shadow: -2px -2px 6px #555555, 2px 2px 6px #555555;
+}
+
+.content .side1{
+    grid-area:2/37/14/59;
+    background-color:rgba(12,25,34, 0.5);
+    border:6px solid rgba(12,25,34, 0.3);
+    border-radius:20px;
+    box-shadow: -2px -2px 6px #555555, 2px 2px 6px #555555;
+}
+.content .side2{
+    grid-area:15/37/27/59;
+    background-color:rgba(12,25,34, 0.5);
+    border:6px solid rgba(12,25,34, 0.3);
+    border-radius:20px;
+    box-shadow: -2px -2px 6px #555555, 2px 2px 6px #555555;
+}
+.content .side3{
+    grid-area:28/37/40/59;
+    background-color:rgba(12,25,34, 0.5);
+    border:6px solid rgba(12,25,34, 0.3);
+    border-radius:20px;
+    box-shadow: -2px -2px 6px #555555, 2px 2px 6px #555555;
+}
+
+.Select-value {
+    cursor: pointer;
+}
+
+.Select-control {
+    color: #000 !important;
+}
+
+.Select {
+    color: #999999 !important;
+}
+
+.Select-menu-outer {
+    background-color: rgb(225, 225, 225,0) !important;
+    border: 0px solid rgba(225, 225, 225,0) !important;
+}
+
+.Select div {
+    background-color: rgba(225, 225, 225,0.01) !important;
+    border:0px;
+}
+
+.Select-menu-outer div:hover {
+    background-color: rgba(255, 255, 255, 0.01) !important;
+    cursor: pointer;
+}
+
+.Select-value-label {
+    color: #E6E9EE !important;
+    font-weight:bold;
+    font-size:19px;
+    border:0px;
+}
+
+.Select--single > .Select-control .Select-value, .Select-placeholder {
+  border: 1px solid #111111 !important;
+  border-radius: 4px !important;
+}
+
+
+.text_area{
+    height:15%;
+}
+
+.chart_area{
+    height:85%;
+}
+
+.chart_area .dash-graph {
+  height: 100%;
+  width: 100%;
+}
+
+.chart_area .dash-table {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #0D161F #0F212D;
+}
+
+*::-webkit-scrollbar {
+    width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #0D161F;
+    border-radius:20px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #0F212D;
+    border-radius: 20px;
+    border: 3px solid #0D161F;
+}
+
+
+
